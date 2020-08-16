@@ -6,24 +6,25 @@ Visit this site for further details:
 https://code.visualstudio.com/docs/python/tutorial-flask
 
 ## Prerequisites 
-    1. Install the Python extension.
-    2. Install a version of Python 3 (for which this tutorial is written). To install other Python packages you must run $sudo apt install python3-pip in the terminal.
+  1. Install the Python extension.
+  2. Install a version of Python 3 (for which this tutorial is written). To install other Python packages you must run $sudo apt install python3-pip in the    	   	terminal.
        
 ## Create a project environment for the Flask tutorial 
 
 1. On your file system, create a project folder for this tutorial, such as flask1.
 	In that folder, use the following command (as appropriate to your computer) to create a virtual environment named env based on your current interpreter:
+	```
 	$  pip3 install virtualenv 
 	$  virtualenv env   			
+	```
 
-
-2. For activating the environment: $ source env/bin/activate
+2. For activating the environment:``` $ source env/bin/activate```
 
 3. Now inside the env  terminal type:
-	$ pip3 install flask flask-sqlalchemy
+	```$ pip3 install flask flask-sqlalchemy```
 4. Create a app.py
 	Then for running it type:
-	$ python3 -m flask run
+	```$ python3 -m flask run```
 5. Go to browser and see your result in : http://127.0.0.1:5000/
 
 
