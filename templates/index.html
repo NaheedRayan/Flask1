@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock%}
+
+
+
+{% block body %}
+
+<br>
+<br>
+<h1>Home page</h1>
+
+
+<main role="main">
+    <div class="jumbotron">
+        <div class="col-sm-8 mx-auto">
+            <h1>Welcome to the blog</h1>
+            <p>This example is written in flask.Its my first web app to be exact. I chosed flask instead of django because for 
+                flask is easy to use. Moreover its a suitable candidate for my small experimental Project. If you wanna see my
+                other project please visit this site <a href="https://redumbrellacorp.wordpress.com/">RedUmbrellaCorp</a></p>
+            <p>In order to post something please go to the link below.</p>
+            <p>
+                <a class="btn btn-primary" href="/posts" role="button">Go to Posts &raquo;</a>
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock%}
