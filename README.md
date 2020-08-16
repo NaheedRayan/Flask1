@@ -7,7 +7,7 @@ https://code.visualstudio.com/docs/python/tutorial-flask
 
 ## Prerequisites 
   1. Install the Python extension.
-  2. Install a version of Python 3 (for which this tutorial is written). To install other Python packages you must run $sudo apt install python3-pip in the    	   	terminal.
+  2. Install a version of Python 3 (for which this tutorial is written). To install other Python packages you must run ```$sudo apt install python3-pip ```in the    	   	terminal.
        
 ## Create a project environment for the Flask tutorial 
 
@@ -30,9 +30,10 @@ https://code.visualstudio.com/docs/python/tutorial-flask
 
 
 ## Creating database 
-1.	from flask sqlalchemy import SQLAlchemy
+1.	```from flask sqlalchemy import SQLAlchemy```
 
-2. 	app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+2. 	```
+	app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 	db = SQLAlchemy(app)
 	
 	class BlogPost(db.Model):
@@ -44,27 +45,27 @@ https://code.visualstudio.com/docs/python/tutorial-flask
     		
    		def __repr__(self):
    			return 'Blog post '+str(self.id)
-   			
+   	```	
    			
 3. 	Now to build the file open the python environment
-4.	$ from app import db
-5. 	$ db.create_all()
+4.	```$ from app import db```
+5. 	```$ db.create_all()```
 	
 	This will create a post.db file in the directory
 
 
 ## Adding some entries to database
 for that in the python environment import the model
-1. 	$ from app import BlogPost
+1. 	```$ from app import BlogPost```
 
 ## For querying BlogPost
- 	$ BlogPost.query.all()
+ 	```$ BlogPost.query.all()```
 
 ## For adding to BlogPost
-1. 	$ db.session.add(BlogPost(title = 'Blog Post 1', content = 'Content of blog post 1',author ='aroon'))
+1. 	```$ db.session.add(BlogPost(title = 'Blog Post 1', content = 'Content of blog post 1',author ='aroon'))```
 
 ## Example:
-
+```
 (env) naheed@naheed-s15-x530un:~/Desktop/Flask1$ python3
 Python 3.8.2 (default, Jul 16 2020, 14:00:26) 
 [GCC 9.3.0] on linux
@@ -84,14 +85,14 @@ Blog post 2
 >>> BlogPost.query.all()[1].date_posted
 datetime.datetime(2020, 8, 13, 6, 58, 57, 594283)
 >>> 
-
+```
 
 ## after adding something commit should be used
-	$ db.session.commit()
+	```$ db.session.commit()```
 
 
 ## some functions
-
+```
 (env) naheed@naheed-s15-x530un:~/Desktop/Flask1$ python3
 Python 3.8.2 (default, Jul 16 2020, 14:00:26) 
 [GCC 9.3.0] on linux
@@ -129,10 +130,10 @@ Blog post 6
 >>> BlogPost.query.get(7)
 >>> BlogPost.query.get(7)
 [1]+  Stopped                 python3
-
+```
 
 ## deleting and updating 
-
+```
 (env) naheed@naheed-s15-x530un:~/Desktop/Flask1$ python3
 Python 3.8.2 (default, Jul 16 2020, 14:00:26) 
 [GCC 9.3.0] on linux
@@ -154,7 +155,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> BlogPost.query.get(1).author
 'Qazi'
 >>> 
-
+```
 BlogPost.query.get(4) returns an object.
 
 
