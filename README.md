@@ -56,19 +56,13 @@ https://code.visualstudio.com/docs/python/tutorial-flask
 
 ## Adding some entries to database
 for that in the python environment import the model
-1. 	```
-	$ from app import BlogPost
-	```
+1. 	```$ from app import BlogPost```
 
 ## For querying BlogPost
- 	```
-	$ BlogPost.query.all()
-	```
+ 	```$ BlogPost.query.all()```
 
 ## For adding to BlogPost
-1. 	```
-	$ db.session.add(BlogPost(title = 'Blog Post 1', content = 'Content of blog post 1',author ='aroon'))
-	```
+1. 	```$ db.session.add(BlogPost(title = 'Blog Post 1', content = 'Content of blog post 1',author ='aroon'))```
 
 ## Example:
 ```
