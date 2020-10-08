@@ -3,7 +3,7 @@ appdirs==1.4.4
 autopep8==1.5.4
 bcrypt==3.1.7
 blinker==1.4
-Brlapi==0.7.0
+
 caffeine==2.9.4
 certifi==2019.11.28
 chardet==3.0.4
